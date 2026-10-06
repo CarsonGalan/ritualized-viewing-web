@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+/* v43.0b: startup title card + warning (fonts in fonts/, SIL OFL; latin subset) */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('fonts/space-grotesk-latin-500-normal.woff2') format('woff2');
+  font-weight: 500;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Archivo';
+  src: url('fonts/archivo-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Archivo';
+  src: url('fonts/archivo-latin-600-normal.woff2') format('woff2');
+  font-weight: 600;
+  font-display: block;
+}
+.rv-start button {
+  font-family: 'Archivo', sans-serif;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.rv-start button:hover {
+  background: #fff;
+  color: #000;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- charset first: without it some local loads parse p5 as Latin-1 and fail -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ritualized Viewing</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Same libraries/versions as the p5 web editor -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.4.1/dist/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <main>
+    </main>
+    <!-- Ritualized Viewing v42.2 — load order matters (see 00_index.md):
+         top-level code in each file may only use names from files above it. -->
+    <script src="01_state.js"></script>
+    <script src="02_rhythm.js"></script>
+    <script src="03_draw.js"></script>
+    <script src="04_room.js"></script>
+    <script src="05_menus.js"></script>
+    <script src="05b_projection.js"></script>
+    <script src="06_dock.js"></script>
+    <script src="07_sequence.js"></script>
+    <script src="08_webgl.js"></script>
+    <script src="09_export.js"></script>
+    <script src="99_mesh.js"></script>
+  </body>
+</html>
