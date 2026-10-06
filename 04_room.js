@@ -1,5 +1,5 @@
 // noprotect
-// Ritualized Viewing v43.1 — 04_room.js
+// Ritualized Viewing v43.1.1 — 04_room.js
 // Room preview constants, room geometry & unfolding, perspective, viewpoint, grid draw range, room background, the person (mesh drawing, cache, shine, marker).
 // Part of a multi-file sketch: all files share one global scope; load order
 // is set in index.html. Map and conventions: 00_index.md.
@@ -24,7 +24,7 @@ const ROOM_DEFAULTS = {
   // v40.3: the scale figure (showcase only). fx / fz = where it stands, as
   // a fraction of the floor's width (left -> right) and depth (front ->
   // back), so it stays in the same place when the room is resized.
-  figure: { on: true, fx: 0.5, fz: 0.5, color: [225, 228, 235], solid: 0 }, // v40.9: solid 0 = chrome … 1 = solid
+  figure: { on: false, fx: 0.5, fz: 0.5, color: [225, 228, 235], solid: 0 }, // v40.9: solid 0 = chrome … 1 = solid; v43.1.1: off at a fresh start
 };
 let room = deepClonePlain(ROOM_DEFAULTS); // saved with the show (buildShowData())
 let roomView = false;       // Flat / Room — a preview switch, not saved

@@ -18,7 +18,7 @@ if (typeof p5 !== 'undefined') p5.disableFriendlyErrors = true;
 //   Changelog v40.x–v41.x: changelog_v40-v41.md (was this header).
 // THIS FILE: Settings, colour & layout sets, scene data model, Projection sets (mappings) data, save / load, migration, backups, session snapshots.
 // =====================================================================
-const SKETCH_VERSION = 'v43.1'; // v40.15: shown in the console and the diagnostics report
+const SKETCH_VERSION = 'v43.1.1'; // v40.15: shown in the console and the diagnostics report
 
 // ---------------------- CONFIGURABLE PARAMETERS ----------------------
 
